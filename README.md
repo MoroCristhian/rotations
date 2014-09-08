@@ -1,4 +1,9 @@
-Server-Maps
-===========
+Fancy Soldiers rotations
+========================
 
-This is the Fancy Soldiers Scrimmage server Maps, not the rots!
+Here u can download and view the maps, suggest and help us with XML from FanC scrimmage server.
+
+Want to be part of Fancy Soldiers?
+==================================
+http://avicus.net/forums/88f74733f
+
