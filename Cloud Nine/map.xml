@@ -1,0 +1,108 @@
+    <?xml version="1.0"?>
+    <map proto="1.3.3">
+    <name>Cloud Nine</name>
+    <version>1.0</version>
+    <objective>Collect wool dyes from the shrines, and the string from killing players. Craft the colored wool and place it on your monument.</objective>
+    <authors>
+       <author>Solo_Runner</author>
+    </authors>
+    <contributors>
+       <contributor contribution="XML">Hydro_Seeds</contributor>
+    <contributors>
+    <rules>
+       <rule>No Spawn Killing</rule>
+    </rules>
+    <teams>
+       <team color="dark red" max="16">Red Team</team>
+       <team color="blue" max="16">Blue Team</team>
+    </teams>
+    <kits>
+       <kit name="spawn">
+          <kit slot="0">stone sword</item>
+          <kit slot="1" enchantment="arrow infinite">bow</item>
+          <item slot="2" amount="64">golden carrot>/item>
+          <item slot="3" amount="16">snowball</item>
+          <potion duration="5" amplifier="4">damage resistance</potion>
+          <potion duration="oo" amplifier="1">night vision</potion>
+       </kit>
+       <kit name="observers">
+          <potion duration="oo" amplifier="1">night vision</potion>
+       <kit parents="spawn" name="red armor">
+          <helmet color="993333" damage="-3000">leather helmet</helmet>
+          <chestplate color="993333" damage="-3000">leather chestplate</chestplate>
+          <leggings color="993333" damage="-3000">leather leggings</leggings>
+          <boots color="993333" damage="-3000">leather boots</boots>
+       </kit>
+       <kit parents="spawn" name="blue armor">
+          <helmet color="334CB2" damage="-3000">leather helmet</helmet>
+          <chestplate color="334CB2" damage="-3000">leather chestplate</chestplate>
+          <leggings color="334CB2" damage="-3000">leather leggings</leggings>
+          <boots color="334CB2" damage="-3000">leather boots</boots>
+       </kit>
+    </kits>
+    <killreward>
+       <item amount="1">string</item>
+    </killreward>
+    <itemrepair>
+       <item>stone sword</item>
+       <item>bow</item>
+    </itemrepair>
+    <itemremove>
+       <item>leather helmet</item>
+       <item>leather chestplate</item>
+       <item>leather leggings</item>
+       <item>leather boots</item>
+       <item>string</item>
+       <item>yellow dye</item>
+       <item>lime dye</item>
+       <item>purple dye</item>
+       <item>golden carrot</item>
+       <item>snowball</item>
+       <item>arrow</item>
+    </itemremove>
+     
+    <wools team="red">
+       <wool color="yellow">
+          <block>21.5,15,42.5</block>
+       </wool>
+       <wool color="lime">
+          <block>-20.5,15,42.5</block>
+       </wool>
+       <wool color="purple">
+          <block>0.5,15,63.5</block>
+       </wool>
+    </wools>
+    <wools team="blue">
+       <wool color="yellow">
+          <block>21.5,15,-41.5</block>
+       </wool>
+       <wool color="lime">
+          <block>-20.5,15,-41.5</block>
+       </wool>
+       <wool color="purple">
+          <block>0.5,15,-62.5</block>
+       </wool>
+    </wools>
+    <spawns>
+       <spawns safe="true">
+       <spawn team="red" kit="red armor" yaw="180">
+          <circle center="0.5,42.5," radius="2">
+       </spawn>
+       <spawn team="blue" kit="blue armor" yaw="0">
+          <circle center="0.5,-41.5," radius="2">
+       </spawn>
+       <default kit="observers yaw="0">
+          <circle center="0.5,0.5," radius="2">
+       </default>
+    </spawns>
+    <filters>
+       <filter name="no-blocks" parents="deny-blocks">
+    </filters>
+    <regions>
+       <cuboid name="all" min="51.5,1,70.5 max="-50.5,25,-69.5">
+       <apply block="no-blocks" message="You cannot edit the playfield!">
+          <region name="all"/>
+       </apply>
+    </regions>
+    </map>
+
